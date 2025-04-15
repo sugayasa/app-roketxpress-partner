@@ -188,10 +188,18 @@ defined('PATH_STORAGE')						    || define('PATH_STORAGE', getenv('PATH_STORAGE'
 defined('PATH_STORAGE_COLLECT_PAYMENT_RECEIPT')	|| define('PATH_STORAGE_COLLECT_PAYMENT_RECEIPT', PATH_STORAGE.'BST/collectPayment/');
 
 defined('FIREBASE_PRIVATE_KEY_PATH')		    || define('FIREBASE_PRIVATE_KEY_PATH', APPPATH . getenv('FIREBASE_PRIVATE_KEY_PATH') ?: 'default.json');
+
+defined('FIREBASE_PUBLIC_API_KEY')              || define('FIREBASE_PUBLIC_API_KEY', getenv('FIREBASE_PUBLIC_API_KEY') ?: 'AIopPPLLERjk1-7XXXXXXXXXXXXXXXXXX');
+defined('FIREBASE_PUBLIC_AUTH_DOMAIN')		    || define('FIREBASE_PUBLIC_AUTH_DOMAIN', getenv('FIREBASE_PUBLIC_AUTH_DOMAIN') ?: 'example-project.firebaseapp.com');
+defined('FIREBASE_PUBLIC_PROJECT_ID')		    || define('FIREBASE_PUBLIC_PROJECT_ID', getenv('FIREBASE_PUBLIC_PROJECT_ID') ?: 'example-project');
+defined('FIREBASE_PUBLIC_STORAGE_BUCKET')       || define('FIREBASE_PUBLIC_STORAGE_BUCKET', getenv('FIREBASE_PUBLIC_STORAGE_BUCKET') ?: 'example-project.appspot.com');
+defined('FIREBASE_PUBLIC_MESSAGING_SENDER_ID')  || define('FIREBASE_PUBLIC_MESSAGING_SENDER_ID', getenv('FIREBASE_PUBLIC_MESSAGING_SENDER_ID') ?: '111111111111');
+defined('FIREBASE_PUBLIC_APP_ID')               || define('FIREBASE_PUBLIC_APP_ID', getenv('FIREBASE_PUBLIC_APP_ID') ?: '1:111111111111:web:0ffffffffffffffffffff');
+defined('FIREBASE_PUBLIC_MEASUREMENT_ID')       || define('FIREBASE_PUBLIC_MEASUREMENT_ID', getenv('FIREBASE_PUBLIC_MEASUREMENT_ID') ?: 'G-1111111111');
+
 defined('FIREBASE_RTDB_URI')                    || define('FIREBASE_RTDB_URI', getenv('FIREBASE_RTDB_URI') ?: 'https://example.com');
 defined('FIREBASE_RTDB_PROJECT_ID')             || define('FIREBASE_RTDB_PROJECT_ID', getenv('FIREBASE_RTDB_PROJECT_ID') ?: 'default');
 defined('FIREBASE_RTDB_MAINREF_NAME')           || define('FIREBASE_RTDB_MAINREF_NAME', getenv('FIREBASE_RTDB_MAINREF_NAME') ?: 'default/');
-defined('FIREBASE_RTDB_WEBREF_NAME')            || define('FIREBASE_RTDB_WEBREF_NAME', getenv('FIREBASE_RTDB_WEBREF_NAME') ?: 'default/');
 
 
 defined('MAIL_CSSSTYLE')				        || define('MAIL_CSSSTYLE', "<style>table{border-spacing:0;border-collapse:collapse;}

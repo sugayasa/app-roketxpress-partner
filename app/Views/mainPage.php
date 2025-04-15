@@ -348,14 +348,14 @@ if(window.location.href != '<?=BASE_URL?>') window.history.replaceState({Title: 
 	import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
 
 	const firebaseConfig = {
-		apiKey: "AIzaSyAMhsVnlx59_f7pmoiRBkEWzW0giiSJL4w",
-		authDomain: "bst-webapp.firebaseapp.com",
+		apiKey: '<?=FIREBASE_PUBLIC_API_KEY?>',
+		authDomain: '<?=FIREBASE_PUBLIC_AUTH_DOMAIN?>',
 		databaseURL: "<?=FIREBASE_RTDB_URI?>",
-		projectId: "bst-webapp",
-		storageBucket: "bst-webapp.appspot.com",
-		messagingSenderId: "579411820208",
-		appId: "1:579411820208:web:54ab1c1fc2427525f24575",
-		measurementId: "G-ZFQ0CCQ8JS"
+		projectId: '<?=FIREBASE_PUBLIC_PROJECT_ID?>',
+		storageBucket: '<?=FIREBASE_PUBLIC_STORAGE_BUCKET?>',
+		messagingSenderId: '<?=FIREBASE_PUBLIC_MESSAGING_SENDER_ID?>',
+		appId: '<?=FIREBASE_PUBLIC_APP_ID?>',
+		measurementId: '<?=FIREBASE_PUBLIC_MEASUREMENT_ID?>'
 	};
 
 	const app						=	initializeApp(firebaseConfig),
